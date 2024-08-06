@@ -1,12 +1,14 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UseGuards } from '@nestjs/common';
 import { AppService } from './app.service';
+import { FirebaseAuthGuard } from './auth/firebase-auth.guard';
 
-@Controller()
+@Controller('protected')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @UseGuards(FirebaseAuthGuard)
+  getProtectedResource() {
+    return { message: 'This is a protected resource' };
   }
 }
