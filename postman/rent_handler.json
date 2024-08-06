@@ -193,7 +193,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "auth",
 			"id": "c2e3cef7-07ce-4b8d-bb13-324f001b1d0c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
