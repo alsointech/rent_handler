@@ -9,7 +9,7 @@ export class FirebaseAdminService {
   constructor() {
     this.defaultApp = admin.initializeApp({
       credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
-      databaseURL: 'https://your-database-name.firebaseio.com'
+      databaseURL: 'https://rent-handler.firebaseio.com'
     });
   }
 

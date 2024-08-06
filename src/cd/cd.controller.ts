@@ -1,9 +1,11 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
 import { CdService } from './cd.service';
 import { CreateCdDto } from './dto/create-cd.dto';
 import { UpdateCdDto } from './dto/update-cd.dto';
+import { FirebaseAuthGuard } from 'src/auth/firebase-auth.guard';
 
 @Controller('cd')
+@UseGuards(FirebaseAuthGuard) 
 export class CdController {
   constructor(private readonly cdService: CdService) {}
 
