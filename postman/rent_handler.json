@@ -200,7 +200,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{base_url}}/auth"
 			},
 			"response": []
 		}
