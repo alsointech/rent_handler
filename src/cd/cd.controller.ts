@@ -5,7 +5,7 @@ import { UpdateCdDto } from './dto/update-cd.dto';
 import { FirebaseAuthGuard } from 'src/auth/firebase-auth.guard';
 
 @Controller('cd')
-@UseGuards(FirebaseAuthGuard) 
+// @UseGuards(FirebaseAuthGuard) 
 export class CdController {
   constructor(private readonly cdService: CdService) {}
 

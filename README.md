@@ -49,10 +49,6 @@ $ npm run test:cov
 - https://typeorm.io/
 - https://firebase.google.com/docs
 
-## Stay in touch
-
-- Author - Alejandro Franco Cedeño
-
 ## Dependencies
 ```bash
 npm install @nestjs/swagger swagger-ui-express
@@ -60,3 +56,8 @@ npm install joi
 npm install firebase-admin
 npm install typeorm @nestjs/typeorm
 ```
+
+## Stay in touch
+
+- Author - Alejandro Franco Cedeño
+

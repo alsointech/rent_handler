@@ -5,7 +5,7 @@ import { UpdateRentalDto } from './dto/update-rental.dto';
 import { FirebaseAuthGuard } from 'src/auth/firebase-auth.guard';
 
 @Controller('rental')
-@UseGuards(FirebaseAuthGuard) 
+// @UseGuards(FirebaseAuthGuard) 
 export class RentalController {
   constructor(private readonly rentalService: RentalService) {}
 
